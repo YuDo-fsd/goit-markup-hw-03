@@ -47,10 +47,12 @@ p {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-  display: block
+  display: block;
 }
 
 .link {
@@ -58,22 +60,25 @@ img {
 }
 
 .section {
+  padding: 94px 0;
+}
+
+.container {
   display: flex;
   width: 1200px;
   padding: 0 15px;
-  margin: auto;
+  margin: 0 auto;
 }
-
 
 /* HEADER */
 
 .header-container {
   width: 1200px;
   padding: 0 15px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -131,7 +136,6 @@ img {
   line-height: calc(24 / 14);
 }
 
-
 .logo-first {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -150,21 +154,29 @@ img {
 
 /* MAIN INDEX.HTML*/
 
+/* HERO */
+
 .hero {
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin: 0 auto;
+  padding: 200px 0 30px;
+  width: 696px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-button {
+  margin-bottom: 200px;
+
   font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--secondary-site-color);
@@ -174,7 +186,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
   align-items: center;
   text-align: center;
 }
@@ -184,9 +195,31 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* OUR BENEFITS */
+
+.benefits-section {
+  padding-bottom: 0;
+}
+
+.benefits-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  gap: 30px;
+}
+
+.benefits-list {
+  width: 270px;
+  text-align: left;
 }
 
 .benefits-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -200,8 +233,33 @@ img {
   line-height: calc(24 / 14);
 }
 
+/* WHAT WE DO */
+
+.whatwedo-list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* OUR TEAM */
+
 .section-team {
   background-color: var(--section-team-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.team-member {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-title {
@@ -210,6 +268,7 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  padding: 30px 0 10px;
 }
 
 .team-position {
@@ -218,9 +277,23 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  padding-bottom: 30px;
 }
 
 /* MAIN PORTFOLIO.HTML */
+
+/* FILTER BUTTONS */
+
+.filter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter li {
+  display: inline;
+  margin-right: 8px;
+  margin-left: auto;
+}
 
 .filter-button:first-letter {
   text-transform: uppercase;
@@ -246,6 +319,20 @@ img {
   cursor: pointer;
 }
 
+/* SAMPLES */
+
+.samples {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  border: #212121;
+  padding: 20px 24px;
+  border: 1px solid #ececec;
+}
+
 .sample-name {
   color: var(--title-text-color);
   font-weight: 700;
@@ -258,16 +345,44 @@ img {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: calc(30 / 16);
+  margin-top: 4px;
 }
 
 /* FOOTER */
 
 .footer {
+  padding-top: 30px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
-.footer-third {
+.adress-container {
+  display: block;
+}
+
+.footerlogo-first {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: #2196f3;
+}
+
+.footerlogo-second {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
   color: var(--primary-white-color);
+}
+
+.adress-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.adress-li {
+  margin-top: 9px;
 }
 
 .contact-footer {
