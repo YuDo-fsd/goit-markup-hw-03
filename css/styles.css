@@ -64,7 +64,6 @@ img {
 }
 
 .container {
-  display: flex;
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -72,13 +71,16 @@ img {
 
 /* HEADER */
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -116,7 +118,6 @@ img {
 }
 
 .contact-list a {
-  /* display: flex; */
   padding: 28px 0;
   display: block;
 }
@@ -159,11 +160,11 @@ img {
 .hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
-  margin: 0 auto;
-  padding: 200px 0 30px;
+  margin: 0 auto 30px;
   width: 696px;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -175,8 +176,6 @@ img {
 }
 
 .hero-button {
-  margin-bottom: 200px;
-
   font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--secondary-site-color);
@@ -196,7 +195,7 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* OUR BENEFITS */
@@ -205,7 +204,7 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-container {
+.benefits-order {
   display: flex;
   margin: 0 auto;
   padding: 0;
@@ -305,6 +304,8 @@ img {
 }
 
 .filter-button {
+  padding: 0 22px;
+
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
   font-family: inherit;
@@ -328,9 +329,10 @@ img {
 }
 
 .card-content {
-  border: #212121;
   padding: 20px 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
 
 .sample-name {
@@ -351,8 +353,7 @@ img {
 /* FOOTER */
 
 .footer {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
