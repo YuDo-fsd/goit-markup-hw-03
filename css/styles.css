@@ -53,6 +53,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -76,9 +78,6 @@ img {
 }
 
 .header-container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -92,7 +91,7 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 0 0 0 93px;
+  margin-left: 93px;
   padding: 0;
 }
 
@@ -130,9 +129,7 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 0 0 0 338px;
-  padding: 0;
-  border: 0;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -141,7 +138,7 @@ img {
   line-height: calc(24 / 14);
 }
 
-.logo-first {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -150,10 +147,6 @@ img {
 }
 
 .logo-second {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
   color: var(--primary-text-color);
 }
 
@@ -183,14 +176,15 @@ img {
   font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--secondary-site-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--secondary-site-color);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border: none;
   align-items: center;
   text-align: center;
+  padding: 10px 32px;
 }
 
 .section-title {
@@ -210,8 +204,6 @@ img {
 
 .benefits-order {
   display: flex;
-  margin: 0 auto;
-  padding: 0;
   gap: 30px;
 }
 
@@ -265,13 +257,17 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-info {
+  padding: 30px;
+}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  padding: 30px 0 10px;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -280,7 +276,6 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  padding-bottom: 30px;
 }
 
 /* MAIN PORTFOLIO.HTML */
@@ -288,14 +283,13 @@ img {
 /* FILTER BUTTONS */
 
 .filter {
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.filter li {
-  display: inline;
+.filter li:not(:last-child) {
   margin-right: 8px;
-  margin-left: auto;
 }
 
 .filter-button:first-letter {
@@ -312,7 +306,7 @@ img {
 }
 
 .filter-button {
-  padding: 0 22px;
+  padding: 6px 22px;
 
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
@@ -375,19 +369,7 @@ img {
   display: block;
 }
 
-.footerlogo-first {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: #2196f3;
-}
-
 .footerlogo-second {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
   color: var(--primary-white-color);
 }
 
@@ -396,7 +378,7 @@ img {
   margin-top: 20px;
 }
 
-.adress-li {
+.adress-li:not(:first-child) {
   margin-top: 9px;
 }
 
